@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-light: #ffffff;
+    --primary-color: #fbbc39;
+
+}
+
+/*-----------NAVBAR----------------*/
+body {
+    background-color: white
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+#navbarSupportedContent a {
+
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+
+#navbarSupportedContent a:hover {
+
+
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.sign{
+    background: var(--primary-color);
+    width: 100px;
+    border-radius: 15px;
+
+}
+.sign:hover{
+    background: #fd9c00;
+    color: white;
+    translate: 1px;
+
+}
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------homepage----------------*/
+
+#home {
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .8)), url(/HKART/img/yelobuilding.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#home h1 {
+    font-size: 100px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home p {
+    font-size: 25px;
+    color: #fbbc39;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+/*-----------about----------------*/
+#about{
+    background-color: #fbbc39;
+}
+#about h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+/*-----------products----------------*/
+
+#products{
+    background: #e5e5e5;
+}
+#products h1{
+    font-size:50px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+#products img{
+    width: 200px;
+    height: 200px;
+    padding-top: 10px;
+   
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border: none!important;
+    box-shadow: 15px 20px 10px rgba(0, 0, 0, .3),
+                inset 4px 4px 10px #e5e5e5;
+
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+    transition: .3s;
+    
+                
+}
+.card:hover{
+    box-shadow: 15px 20px 10px #e5e5e5,
+                inset 4px 4px 13px rgba(0, 0, 0, .4);
+
+}
+#hello{
+    background:black;
+    
+}
+#hello h2{
+    color: #ffffff;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background: black;
+    color: 
+    white;
+    
+    text-align: center;
+    
+}
+
+
+/*-----MEDIAQUERY-----*/
+
+@media only screen and (max-width:600px){
+
+    /******navbar*******/
+    .navbar-toggler{
+        background: #fbbc39;
+    }
+
+    /******homepage*******/
+    #home h1 {
+        font-size: 75px;
+        color: #fbbc39;
+        letter-spacing: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #home p {
+        font-size: 20px;
+        color: #ffffff;
+        font-style: italic;
+        
+        font-family: sans-serif;
+    }
+    /*-----------about----------------*/
+    #about{
+        background-color: #fbbc39;
+        text-align: center;
+    }
+    #about h1{
+        font-size: 40px;
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    #about p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    /*-----------products----------------*/
+
+    
+    #products h1{
+        font-size:50px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+    #products img{
+        width: 200px;
+        height: 200px;
+        padding-top: 10px;
+    
+    }
+    /****contact***/
+
+#contact{
+    background: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    
+}
+#contact img{
+    width: 100%;
+}
+.cont{
+    width: 80% !important;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact h1{
+    color: #fbbc39;
+}
+#contact label,h5{
+    color: white;
+}
+#contact input{
+    margin: 10px 0px;
+    
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+
+}
